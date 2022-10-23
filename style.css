@@ -1,0 +1,210 @@
+html,body{
+    margin: 0;
+    width: 100%;
+    height: 150vh;
+    color: white;
+    background: url("./assets/background.jpg") ;
+    overflow-x: hidden;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+canvas{
+    position: relative;
+}
+.day-container{
+    position: absolute;
+    height: 70vh;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 15px;
+}
+
+.night-container{
+    position: absolute;
+    height: 15vh;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+    padding-left: 15px;
+}
+
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.night-animation{
+
+    display: none;
+
+}
+
+.moon{
+    font-size: 4rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    margin-left: 25rem;
+}
+
+.star{
+    font-size: 3rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    margin-left: 8rem;
+    margin-top: 250px;
+}
+
+.star2{
+    font-size: 4rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5rem;
+}
+.star3{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    margin-right: 100px;
+}
+.star4{
+    font-size: 4rem;
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-left: 35rem;
+}
+
+.sun{
+    font-size: 5rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25rem;
+}
+
+.cloud{
+    font-size: 4rem;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 26rem;
+    margin-top: 100px;
+}
+
+.cloud2{
+    font-size: 4rem;
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-left: 35rem;
+}
+
+.cloud3{
+    font-size: 4rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 15rem;
+}
+.info{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1600px) {
+    .sun{
+        margin-right: 15rem;
+    }
+    .cloud{
+        margin-right: 16rem;
+    }
+    .moon{
+        margin-left: 15rem;
+    }
+  }
+
+  @media only screen and (max-width: 1225px) {
+    .sun{
+        margin-right: 5rem;
+    }
+    
+    .cloud{
+        margin-right: 6rem;
+    }
+    .moon{
+        margin-left: 5rem;
+    }
+
+    .cloud3{
+        margin-left: 5rem;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .sun{
+        margin-right: 1rem;
+    }
+    
+    .cloud{
+        margin-right: 2rem;
+    }
+    .moon{
+        margin-left: 1rem;
+    }
+    .cloud3{
+        
+        margin-left: 1rem;
+    }
+    .star2{
+        margin-right: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .sun{
+        display: none;
+    }
+    .cloud{
+        display: none;
+    }
+    .moon{
+        display: none;
+    }
+    .cloud3{
+        display: none;
+    }
+    .star2{
+        display: none;
+    }
+  }
